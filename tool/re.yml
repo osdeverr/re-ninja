@@ -4,4 +4,4 @@ name: .tool
 artifact-name: ninja
 
 deps:
-  - .libninja
+  - .libtool

@@ -1,2 +1,9 @@
 type: project
 name: ninja
+
+cxx-standard: 17
+
+cxxenv.msvc:
+  cxx-build-flags:
+    compiler:
+      - /Zc:__cplusplus
