@@ -1,2 +1,7 @@
 type: project
 name: .libninja
+
+cxxenv.msvc:
+  cxx-build-flags:
+    compiler:
+      - /Zc:__cplusplus
