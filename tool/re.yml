@@ -1,0 +1,7 @@
+type: executable
+name: .tool
+
+artifact-name: ninja
+
+deps:
+  - .libninja
