@@ -1,3 +1,9 @@
+//
+// NOTICE: Modified by osdever (Nikita Ivanov) at 12/05/2022 - added define checks
+//
+
+#ifdef RE_NINJA_BUILD_WINDOWS_IMPL
+
 #ifndef GETOPT_H
 #define GETOPT_H
 
@@ -55,3 +61,5 @@ extern "C"
 #endif /* GETOPT_H */
 
 /* END OF FILE getopt.h */
+
+#endif // RE_NINJA_BUILD_WINDOWS_IMPL

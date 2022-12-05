@@ -1,8 +1,0 @@
-type: static-library
-name: .impl.posix
-
-platform.windows:
-  enabled: false
-
-deps:
-  - .libninja

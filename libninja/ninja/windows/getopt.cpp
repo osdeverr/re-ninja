@@ -83,6 +83,12 @@ Gregory Pietsch's current e-mail address:
 gpietsch@comcast.net
 ****************************************************************************/
 
+//
+// NOTICE: Modified by osdever (Nikita Ivanov) at 12/05/2022 - added define checks
+//
+
+#ifdef RE_NINJA_BUILD_WINDOWS_IMPL
+
 /* include files */
 #include <stdio.h>
 #include <stdlib.h>
@@ -408,3 +414,5 @@ getopt_long_only (int argc, char **argv, const char *shortopts,
 }
 
 /* end of file GETOPT.C */
+
+#endif // RE_NINJA_BUILD_WINDOWS_IMPL

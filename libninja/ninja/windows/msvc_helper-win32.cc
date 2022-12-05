@@ -12,6 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+//
+// NOTICE: Modified by osdever (Nikita Ivanov) at 12/05/2022 - added define checks
+//
+
+#ifdef RE_NINJA_BUILD_WINDOWS_IMPL
+
 #include <ninja/msvc_helper.h>
 
 #include <windows.h>
@@ -106,3 +112,5 @@ int CLWrapper::Run(const string& command, string* output) {
 
   return exit_code;
 }
+
+#endif // RE_NINJA_BUILD_WINDOWS_IMPL

@@ -12,6 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+//
+// NOTICE: Modified by osdever (Nikita Ivanov) at 12/05/2022 - added define checks
+//
+
+#ifdef RE_NINJA_BUILD_WINDOWS_IMPL
+
 #include <ninja/includes_normalize.h>
 
 #include <ninja/string_piece.h>
@@ -208,3 +214,5 @@ bool IncludesNormalize::Normalize(const string& input,
     return false;
   return true;
 }
+
+#endif // RE_NINJA_BUILD_WINDOWS_IMPL

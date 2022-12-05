@@ -12,6 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+//
+// NOTICE: Modified by osdever (Nikita Ivanov) at 12/05/2022 - added define checks
+//
+
+#ifdef RE_NINJA_BUILD_WINDOWS_IMPL
+
 #include <ninja/subprocess.h>
 
 #include <assert.h>
@@ -305,3 +311,5 @@ void SubprocessSet::Clear() {
     delete *i;
   running_.clear();
 }
+
+#endif // RE_NINJA_BUILD_WINDOWS_IMPL

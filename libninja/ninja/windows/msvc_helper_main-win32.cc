@@ -12,6 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+//
+// NOTICE: Modified by osdever (Nikita Ivanov) at 12/05/2022 - added define checks
+//
+
+#ifdef RE_NINJA_BUILD_WINDOWS_IMPL
+
 #include <ninja/msvc_helper.h>
 
 #include <fcntl.h>
@@ -148,3 +154,5 @@ int MSVCHelperMain(int argc, char** argv) {
 
   return exit_code;
 }
+
+#endif // RE_NINJA_BUILD_WINDOWS_IMPL

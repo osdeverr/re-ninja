@@ -12,6 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+//
+// NOTICE: Modified by osdever (Nikita Ivanov) at 12/05/2022 - added define checks
+//
+
+#ifdef RE_NINJA_BUILD_WINDOWS_IMPL
+
 #include <string>
 
 std::string EscapeForDepfile(const std::string& path);
@@ -30,3 +36,5 @@ struct CLWrapper {
 
   void* env_block_;
 };
+
+#endif // RE_NINJA_BUILD_WINDOWS_IMPL
