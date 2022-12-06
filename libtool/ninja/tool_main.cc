@@ -18,6 +18,8 @@
 
 #include "tool_main.h"
 
+#include <errno.h>
+
 #ifdef _WIN32
 #include <ninja/getopt.h>
 #include <direct.h>
