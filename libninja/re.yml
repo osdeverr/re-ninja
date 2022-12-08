@@ -8,3 +8,7 @@ platform.!windows:
   cxx-compile-definitions-public:
     RE_NINJA_BUILD_POSIX_IMPL: true
 
+cxxenv.msvc:
+  cxx-build-flags:
+    compiler:
+      - /Zc:__cplusplus
