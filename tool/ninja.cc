@@ -26,7 +26,7 @@
 #include <cstdlib>
 
 #ifdef _WIN32
-#include <ninja/getopt.h>
+#include <ninja/windows/getopt.h>
 #include <direct.h>
 #include <windows.h>
 #elif defined(_AIX)

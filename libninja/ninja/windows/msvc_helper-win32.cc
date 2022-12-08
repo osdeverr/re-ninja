@@ -18,7 +18,7 @@
 
 #ifdef RE_NINJA_BUILD_WINDOWS_IMPL
 
-#include <ninja/msvc_helper.h>
+#include <ninja/windows/msvc_helper.h>
 
 #include <windows.h>
 

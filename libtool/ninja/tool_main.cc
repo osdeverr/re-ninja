@@ -21,11 +21,11 @@
 #include <errno.h>
 
 #ifdef _WIN32
-#include <ninja/getopt.h>
+#include <ninja/windows/getopt.h>
 #include <direct.h>
 #include <windows.h>
 #elif defined(_AIX)
-#include <ninja/getopt.h>
+#include <ninja/posix/getopt.h>
 #include <unistd.h>
 #else
 #include <getopt.h>
